@@ -9,7 +9,7 @@ set :application, "rails-test-app"
 #set :repo_url, "git@github.com:jfacow/rails-test-app.git"
 set :repo_url, 'https://github.com:443/jfacow/rails-test-app.git'
 #set :port, 22
-
+set :bundle_gemfile, -> { release_path.join('Gemfile') }
 # Default branch is :master
 #ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
