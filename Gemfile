@@ -5,9 +5,22 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+group :development do
+  gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rvm'
+end
+#
+#group :development do
+gem 'capistrano-nvm', require: false
+gem 'capistrano-yarn'
+#end
+#gem 'nokogiri', '~> 1.7.1'
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
+#gem 'mina', require: false
+#gem 'mina-puma', require: false, github: 'untitledkingdom/mina-puma'
 
 gem 'hamlit', '~> 2.8'
 gem 'simple_form'
