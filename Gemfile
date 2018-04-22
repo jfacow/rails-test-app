@@ -14,7 +14,7 @@ group :production do
 #group :development do
 #gem 'capistrano-nvm', require: false
 gem 'capistrano-yarn'
-gem 'capistrano/yarn'
+#gem 'capistrano/yarn'
 #gem 'yarn'
 #end
 #gem 'nokogiri', '~> 1.7.1'
