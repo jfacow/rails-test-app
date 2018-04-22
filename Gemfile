@@ -9,6 +9,8 @@ gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
 
+gem 'yarn'
+
 gem 'hamlit', '~> 2.8'
 gem 'simple_form'
 
