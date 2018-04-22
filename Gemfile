@@ -5,11 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-group :development do
+group :production do
   gem 'capistrano-rails', '~> 1.1.1'
   gem 'capistrano-passenger'
   gem 'capistrano-rvm'
-end
+
 #
 #group :development do
 gem 'capistrano-nvm', require: false
@@ -38,6 +38,8 @@ gem 'sidekiq', '~> 4.2'
 gem 'sidekiq-scheduler', '~> 2.0'
 gem 'sidekiq-failures'
 gem 'redis-namespace'
+
+end
 
 group :development, :test do
   # Console
